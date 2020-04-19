@@ -7,7 +7,7 @@ from team_data import *
 
 # team_list = [4, 294, 399, 597, 687, 696, 968, 1138, 1836, 2122, 2637, 2659, 3309, 3473, 3476, 3647, 4079, 4201, 4276, 4322, 4619, 5012, 5199, 5810, 5818, 5966, 6072, 6220, 6535, 6560, 6904, 6960, 7042, 7157, 7230, 7447]
 team_list = [687]
-headers = ["Team", "Average Auto Score", "Max Auto Score", "Average Auto Balls Low", "Average Auto Balls High", "Max Auto Balls Low", "Max Auto Balls High", "Average Teleop Balls Low", "Average Teleop Balls High", "Max Teleop Balls Low", "Max Teleop Balls High", "Average Teleop Score", "Max Teleop Score", "Ball Accuracy (High)", "Climb Frequency"]
+headers = ["Team", "Average Auto Score", "Max Auto Score", "Average Auto Balls Low", "Average Auto Balls High", "Max Auto Balls Low", "Max Auto Balls High", "Average Teleop Balls Low", "Average Teleop Balls High", "Max Teleop Balls Low", "Max Teleop Balls High", "Average Teleop Score", "Max Teleop Score", "Ball Accuracy (High)", "Climb Frequency", "Control Panel Rotation Frequency", "Control Panel Position Frequency"]
 output_sheet = "2020 Analysis Test"
 input_sheet = "Test Scouting Form (Responses-New)"
 # print(len(beach_blitz_team_list))
@@ -46,6 +46,6 @@ def generate_csv(team_list: list):
 # generate_csv([330, 7042, 687])
 
 
-# generate_csv(team_list)
-def run(event, context):
+#generate_csv(team_list)
+def run():
     generate_csv(team_list)
